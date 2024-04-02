@@ -21,6 +21,10 @@
 // in beats-per-minute
 #endif
 
+#ifndef DELAY_DEFAULT
+#    define DELAY_DEFAULT 64
+#endif
+
 #define SONG(notes...) \
     { notes }
 
@@ -62,6 +66,8 @@
 #define ED_NOTE(n) EIGHTH_DOT_NOTE(n)
 #define SD_NOTE(n) SIXTEENTH_DOT_NOTE(n)
 #define TD_NOTE(n) THIRTYSECOND_DOT_NOTE(n)
+
+#define DELAY MUSICAL_NOTE(_REST, DELAY_DEFAULT)
 
 // Note Timbre
 // Changes how the notes sound

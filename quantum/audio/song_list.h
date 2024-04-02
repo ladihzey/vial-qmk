@@ -156,6 +156,19 @@
  *   proof of permission to use them, or public domain status.
  */
 
+#define BLUE_BIRD \
+    S__NOTE(_E4), DELAY, S__NOTE(_A4), DELAY, \
+    S__NOTE(_B4), DELAY, W__NOTE(_C5), DELAY, \
+    QD_NOTE(_B4), DELAY, M__NOTE(_A4, 8 + 32), HD_NOTE(_REST), \
+    S__NOTE(_E4), DELAY, S__NOTE(_A4), DELAY, \
+    S__NOTE(_B4), DELAY, H__NOTE(_C5), DELAY, \
+    E__NOTE(_D5), DELAY, S__NOTE(_C5), DELAY, \
+    S__NOTE(_D5), DELAY, S__NOTE(_E5), DELAY, ED_NOTE(_E5)
+
+#define WINDOWS_XP_SHUTDOWN \
+    E__NOTE(_A6), DELAY, E__NOTE(_EF6), DELAY, E__NOTE(_A5), DELAY, E__NOTE(_BF5)
+
+
 #ifndef CLOSE_ENCOUNTERS_5_NOTE
 #    define CLOSE_ENCOUNTERS_5_NOTE
 #endif
@@ -188,9 +201,6 @@
 #endif
 #ifndef OVERWATCH_THEME
 #    define OVERWATCH_THEME
-#endif
-#ifndef MARIO_THEME
-#    define MARIO_THEME
 #endif
 #ifndef MARIO_GAMEOVER
 #    define MARIO_GAMEOVER
